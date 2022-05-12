@@ -1,3 +1,4 @@
+import 'package:doctor_appointment/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Doctor Appointment',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ,
+      home: const SplashScreen(),
     );
   }
 }
